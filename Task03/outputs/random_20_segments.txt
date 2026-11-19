@@ -1,0 +1,34 @@
+Q3 – 20 RANDOM SEGMENT ALLOCATION SIMULATION
+load segment 1: 12341 bytes at 0
+load segment 2: 39673 bytes at 12341
+load segment 3: 33738 bytes at 52014
+load segment 4: 20234 bytes at 85752
+load segment 5: 82404 bytes at 105986
+load segment 6: 89866 bytes at 188390
+load segment 7: 42097 bytes at 278256
+load segment 8: 82474 bytes at 320353
+load segment 9: 75860 bytes at 402827
+load segment 10: 60395 bytes at 478687
+load segment 11: 28862 bytes at 539082
+load segment 12: 61893 bytes at 567944
+load segment 13: 70170 bytes at 629837
+load segment 14: 84569 bytes at 700007
+load segment 15: 19763 bytes at 784576
+load segment 16: 41817 bytes at 804339
+load segment 17: 77469 bytes at 846156
+load segment 18: 79483 bytes at 923625
+load segment 19: 98108 bytes at 1003108
+load segment 20: 12411 bytes at 1101216
+remove segment 18: 79483 bytes
+remove segment 15: 19763 bytes
+remove segment 12: 61893 bytes
+remove segment 9: 75860 bytes
+remove segment 6: 89866 bytes
+remove segment 3: 33738 bytes
+
+allocated segments remaining=14
+free holes=7
+total free bytes=1344128
+largest free block=983525
+external fragmentation (free total - largest hole)=360603 bytes
+Note: deterministic first-fit simulation; not a measurement of Linux kernel segment allocation.

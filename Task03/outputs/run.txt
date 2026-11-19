@@ -1,0 +1,25 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03'
+./segment_demo
+Segment translation (segment, offset):
+(0,10) code -> physical 1010
+(0,499) code: protection fault (limit=499)
+(0,500) code: protection fault (limit=499)
+(1,250) data -> physical 5250
+(1,999) data: protection fault (limit=999)
+(1,1000) data: protection fault (limit=999)
+(2,64) stack -> physical 9064
+(2,499) stack: protection fault (limit=499)
+PID=1400; first entries of /proc/self/maps:
+5fd1c8df9000-5fd1c8dfa000 r--p 00000000 00:45 22517998136979328          /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03/segment_demo
+5fd1c8dfa000-5fd1c8dfb000 r-xp 00001000 00:45 22517998136979328          /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03/segment_demo
+5fd1c8dfb000-5fd1c8dfc000 r--p 00002000 00:45 22517998136979328          /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03/segment_demo
+5fd1c8dfc000-5fd1c8dfd000 r--p 00002000 00:45 22517998136979328          /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03/segment_demo
+5fd1c8dfd000-5fd1c8dfe000 rw-p 00003000 00:45 22517998136979328          /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03/segment_demo
+5fd1fd836000-5fd1fd858000 rw-p 00000000 00:00 0                          [heap]
+78db65a00000-78db65a28000 r--p 00000000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+78db65a28000-78db65bc0000 r-xp 00028000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+78db65bc0000-78db65c0e000 r--p 001c0000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+78db65c0e000-78db65c12000 r--p 0020e000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+78db65c12000-78db65c14000 rw-p 00212000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+78db65c14000-78db65c21000 rw-p 00000000 00:00 0 
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task03'

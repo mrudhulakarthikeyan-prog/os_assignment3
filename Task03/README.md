@@ -1,0 +1,1 @@
+Run `make run` for segment base/limit checks and process mappings. Run `make segfault_demo && ./run_segfault.sh` separately to demonstrate a deliberate invalid memory access. A segmentation fault is the OS reporting an invalid memory access to the process; it is not a normal successful run.

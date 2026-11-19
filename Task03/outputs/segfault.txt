@@ -1,0 +1,3 @@
+About to access a null address; a segmentation fault is expected.
+./run_segfault.sh: line 3:  1403 Segmentation fault         ./segfault_demo
+Exit status: 139 (a non-zero status is expected for this deliberate fault)

@@ -1,0 +1,7 @@
+Q3 – TABLE SIZE COMPARISON (illustrative assumptions)
+Assume 32-bit virtual address, 4 KB pages, 4-byte PTE, 3 logical segments/process.
+Pure paging: 1,048,576 PTEs; 4,194,304 bytes for a flat page table.
+Pure segmentation: 3 descriptors × 8 bytes = 24 bytes per process (base, limit, protection metadata).
+Segmented paging: 3 segment descriptors plus page tables only for pages actually mapped; size depends on each segment length.
+Translation: paging uses page-number lookup; segmentation checks limit then adds base; segmented paging checks segment then translates page.
+These are model calculations, not measurements of Linux internal kernel structures.
