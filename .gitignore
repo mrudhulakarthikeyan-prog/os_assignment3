@@ -1,0 +1,23 @@
+# Compiled executables and object files
+Task01/bank_static
+Task01/bank_dynamic
+Task01/bank_dlopen
+Task01/maps_demo
+Task01/hold_maps
+Task01/crypto.o
+Task01/libcrypto_demo.so
+Task02/paging_demo
+Task03/segment_demo
+Task03/segfault_demo
+Task04/vm_access
+Task04/cow_demo
+Task05/replacement_demo
+Task05/locality_demo
+Task06/raid_calc
+Task07/mlock_demo
+Task07/memory_plan
+core
+core.*
+__pycache__/
+
+Task01/hold_maps
