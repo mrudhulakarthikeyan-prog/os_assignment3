@@ -1,0 +1,20 @@
+Q5 – LOCALITY AND RANDOM WORKLOAD COMPARISON
+References per workload=100000; frames=3..10
+[strong_locality]
+3 frames: FIFO=43523, LRU=43236, Optimal=34942
+4 frames: FIFO=37560, LRU=36972, Optimal=29576
+5 frames: FIFO=34691, LRU=33990, Optimal=25678
+6 frames: FIFO=32980, LRU=32209, Optimal=22524
+7 frames: FIFO=31221, LRU=30393, Optimal=19819
+8 frames: FIFO=29227, LRU=28480, Optimal=17466
+9 frames: FIFO=27177, LRU=26339, Optimal=15376
+10 frames: FIFO=25256, LRU=24358, Optimal=13506
+[random]
+3 frames: FIFO=97031, LRU=97031, Optimal=85500
+4 frames: FIFO=96076, LRU=96072, Optimal=81291
+5 frames: FIFO=95038, LRU=95055, Optimal=77735
+6 frames: FIFO=94031, LRU=94031, Optimal=74621
+7 frames: FIFO=93012, LRU=92966, Optimal=71823
+8 frames: FIFO=91995, LRU=91965, Optimal=69283
+9 frames: FIFO=91014, LRU=90976, Optimal=66928
+10 frames: FIFO=90016, LRU=89975, Optimal=64755

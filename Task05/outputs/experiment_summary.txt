@@ -1,0 +1,10 @@
+Q5 – RANDOM REFERENCE STRING (seed=505; 500 references; pages 0–11)
+3 frames: FIFO=366, LRU=364, Optimal=264
+4 frames: FIFO=334, LRU=331, Optimal=211
+5 frames: FIFO=286, LRU=287, Optimal=173
+6 frames: FIFO=250, LRU=250, Optimal=135
+7 frames: FIFO=223, LRU=213, Optimal=105
+8 frames: FIFO=161, LRU=176, Optimal=80
+9 frames: FIFO=122, LRU=138, Optimal=57
+10 frames: FIFO=100, LRU=91, Optimal=39
+CSV and SVG graphs are in this outputs folder.

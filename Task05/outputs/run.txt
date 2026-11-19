@@ -1,0 +1,16 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task05'
+./replacement_demo
+3 frames: FIFO 15, LRU 12, Optimal 9
+4 frames: FIFO 10, LRU 8, Optimal 8
+Belady string, FIFO: 3 frames 9 faults, 4 frames 10 faults
+./locality_demo
+3 frames: LRU faults=83321
+4 frames: LRU faults=78336
+5 frames: LRU faults=73598
+6 frames: LRU faults=68677
+7 frames: LRU faults=63258
+8 frames: LRU faults=57478
+9 frames: LRU faults=52395
+10 frames: LRU faults=48181
+Wrote locality.csv (mixed strong-locality/random reference workload).
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task05'

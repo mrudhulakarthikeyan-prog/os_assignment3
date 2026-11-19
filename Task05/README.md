@@ -1,0 +1,1 @@
+Run `make run`. The first program completes the assignment's LRU TODO and demonstrates FIFO Belady anomaly. The second generates a deterministic 100,000-reference mixed-locality workload and writes LRU fault counts to `locality.csv`. Extend it to FIFO and Optimal for a full comparison if required; Optimal is computationally more expensive because it scans future references.

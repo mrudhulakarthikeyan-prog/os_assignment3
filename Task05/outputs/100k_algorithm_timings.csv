@@ -1,0 +1,7 @@
+workload,algorithm,references,frames,page_faults,seconds
+strong_locality,FIFO,100000,8,29227,0.005320
+strong_locality,LRU,100000,8,28480,0.019163
+strong_locality,OPT,100000,8,17466,0.021778
+random,FIFO,100000,8,91995,0.012346
+random,LRU,100000,8,91965,0.052419
+random,OPT,100000,8,69283,0.069275
