@@ -1,0 +1,40 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01'
+./bank_static
+Bank application: input=12345 encrypted=27235
+LD_LIBRARY_PATH=. ./bank_dynamic
+Bank application: input=12345 encrypted=27235
+./bank_dlopen
+Runtime-loaded library: encrypted=27235
+--- file sizes ---
+ls -lh bank_static bank_dynamic libcrypto_demo.so
+-rwxrwxrwx 1 mrudhula mrudhula 16K Nov 19 16:05 bank_dynamic
+-rwxrwxrwx 1 mrudhula mrudhula 16K Nov 19 16:05 bank_static
+-rwxrwxrwx 1 mrudhula mrudhula 15K Nov 19 16:05 libcrypto_demo.so
+--- linked shared libraries ---
+ldd ./bank_dynamic
+	linux-vdso.so.1 (0x0000759861259000)
+	libcrypto_demo.so => /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so (0x0000759861247000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x0000759861000000)
+	/lib64/ld-linux-x86-64.so.2 (0x000075986125b000)
+--- current process maps (sample) ---
+./maps_demo
+PID=1392; inspect mappings in /proc/1392/maps
+629b00069000-629b0006a000 r--p 00000000 00:45 2251799814470119           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/maps_demo
+629b0006a000-629b0006b000 r-xp 00001000 00:45 2251799814470119           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/maps_demo
+629b0006b000-629b0006c000 r--p 00002000 00:45 2251799814470119           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/maps_demo
+629b0006c000-629b0006d000 r--p 00002000 00:45 2251799814470119           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/maps_demo
+629b0006d000-629b0006e000 rw-p 00003000 00:45 2251799814470119           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/maps_demo
+629b3a259000-629b3a27b000 rw-p 00000000 00:00 0                          [heap]
+7bed86200000-7bed86228000 r--p 00000000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7bed86228000-7bed863c0000 r-xp 00028000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7bed863c0000-7bed8640e000 r--p 001c0000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7bed8640e000-7bed86412000 r--p 0020e000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7bed86412000-7bed86414000 rw-p 00212000 08:30 13647                      /usr/lib/x86_64-linux-gnu/libc.so.6
+7bed86414000-7bed86421000 rw-p 00000000 00:00 0 
+7bed86446000-7bed86449000 rw-p 00000000 00:00 0 
+7bed8644f000-7bed86451000 rw-p 00000000 00:00 0 
+7bed86451000-7bed86455000 r--p 00000000 00:00 0                          [vvar]
+7bed86455000-7bed86457000 r--p 00000000 00:00 0                          [vvar_vclock]
+7bed86457000-7bed86459000 r-xp 00000000 00:00 0                          [vdso]
+7bed86459000-7bed8645a000 r--p 00000000 08:30 13644                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01'

@@ -1,0 +1,32 @@
+Q1 EXPERIMENTAL INVESTIGATION
+============================
+[bank_static] exit=0
+Bank application: input=12345 encrypted=27235
+elapsed_seconds=0.00
+max_rss_kb=1784
+[bank_dynamic] exit=0
+Bank application: input=12345 encrypted=27235
+elapsed_seconds=0.01
+max_rss_kb=1792
+[shared library replacement; executable was NOT relinked]
+Bank application: input=12345 encrypted=8717
+compile_status=0
+[missing shared library test]
+exit=127
+./bank_dynamic: error while loading shared libraries: libcrypto_demo.so: cannot open shared object file: No such file or directory
+[process 1452] shared-library map entries:
+71dddea1e000-71dddea1f000 r--p 00000000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+71dddea1f000-71dddea20000 r-xp 00001000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+71dddea20000-71dddea21000 r--p 00002000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+71dddea21000-71dddea22000 r--p 00002000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+71dddea22000-71dddea23000 rw-p 00003000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+library Shared_Clean (kB)=12
+library Private_Clean (kB)=0
+[process 1453] shared-library map entries:
+78d9e19f4000-78d9e19f5000 r--p 00000000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+78d9e19f5000-78d9e19f6000 r-xp 00001000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+78d9e19f6000-78d9e19f7000 r--p 00002000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+78d9e19f7000-78d9e19f8000 r--p 00002000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+78d9e19f8000-78d9e19f9000 rw-p 00003000 00:45 1970324837759555           /mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task01/libcrypto_demo.so
+library Shared_Clean (kB)=12
+library Private_Clean (kB)=0

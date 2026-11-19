@@ -1,0 +1,1 @@
+Build and run: `make run`. Compare static and shared executable sizes, inspect `ldd`, and inspect `/proc/self/maps`. Replace `libcrypto_demo.so` after building to demonstrate that the dynamic executable can use an updated library without recompilation. The example encryption function is educational only, not secure cryptography.
