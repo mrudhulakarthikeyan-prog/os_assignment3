@@ -1,0 +1,1 @@
+Run `make run`. `mlock_demo` compares repeated page-touch loops with and without `mlock`; the OS may reject locking because of `RLIMIT_MEMLOCK`, which is itself worth recording. Measurements are not hard real-time guarantees. `memory_plan` gives an explicit 2 GB illustrative budget; adjust allocations to match your design assumptions and justify them in the report.

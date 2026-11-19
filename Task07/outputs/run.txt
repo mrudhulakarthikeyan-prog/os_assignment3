@@ -1,0 +1,12 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task07'
+./mlock_demo
+Without mlock: total 0.009004 s; worst measured pass 5371 us
+With mlock: total 0.002826 s; worst measured pass 97 us
+./memory_plan
+Edge device RAM budget (MB): 2048
+Control task: 128 MB (pre-fault and lock with mlock)
+ML task: 1536 MB (paging may be tolerated only if timing allows)
+Logging: 128 MB; OS/reserve: 256 MB
+Planned total: 2048 MB; remaining: 0 MB
+Adding a 500 MB task exceeds the budget by 500 MB; reduce ML working set, offload work, or add RAM.
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task07'

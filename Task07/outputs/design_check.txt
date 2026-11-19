@@ -1,0 +1,9 @@
+Q7 – MEMORY PLAN AND CAPACITY CHECK
+RAM budget=2048 MB
+Control=128 MB (locked/pre-faulted)
+ML=1536 MB
+Logging=128 MB
+OS reserve=256 MB
+Total planned=2048 MB
+Adding a 500 MB task creates a 500 MB overcommit.
+The mlock timing is reported in Task07/outputs/run.txt; results depend on permissions and system load.

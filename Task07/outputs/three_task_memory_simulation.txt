@@ -1,0 +1,6 @@
+Q7 – THREE-TASK MEMORY-USE SIMULATION
+Model: 32 frames; control task is preloaded and pinned in 4 frames; ML and logging share remaining 28 frames.
+control: 100 references; pinned resident set=4 pages; page faults after preload=0 (by design).
+machine_learning: 96 references; LRU faults in 28-frame model=8.
+logging: 100 references; LRU faults in 28-frame model=5.
+Interpretation: this is a deterministic allocation model, not a hard-real-time guarantee. A real deployment must reserve/pre-fault/lock control memory and validate scheduling, interrupt and I/O latency.
