@@ -1,0 +1,2 @@
+Randomly touched 8192 pages (32 MB) in 0.015610 seconds.
+Python mmap experiment; timing is machine-specific.

@@ -1,0 +1,2 @@
+Sequential: bytes=67108864; pages=16384; seconds=0.038605; minor_fault_delta=16384; major_fault_delta=0
+Random: bytes=67108864; pages=16384; seconds=0.022513; minor_fault_delta=16384; major_fault_delta=0

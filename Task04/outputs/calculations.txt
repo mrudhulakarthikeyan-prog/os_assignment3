@@ -1,0 +1,8 @@
+Q4 – PAGE FAULT EFFECTIVE ACCESS TIME
+memory_access_ns=100; page_fault_service_ns=8000000
+fault_rate=0.001; EAT_ns=8099.90
+fault_rate=1e-05; EAT_ns=180.00
+fault_rate=1e-06; EAT_ns=108.00
+
+Maximum fault rate for 10% slowdown: solve 100 + p*(8,000,000-100)=110 ns
+p=1.2500156252e-06 (approximately one fault per 799,990 accesses)

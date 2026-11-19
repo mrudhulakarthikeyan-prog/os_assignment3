@@ -1,0 +1,4 @@
+Touched 32 MB sequentially in 0.031292 seconds; page size=4096 bytes
+Reverse page-order pass completed.
+
+exit=0

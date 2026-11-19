@@ -1,0 +1,23 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task04'
+./vm_access 32
+Touched 32 MB sequentially in 0.019894 seconds; page size=4096 bytes
+Reverse page-order pass completed.
+./cow_demo
+Parent before fork: max RSS=9548 KB, minor faults=2105, major faults=1
+Child after writes: max RSS=8464 KB, minor faults=2061, major faults=0
+Parent after child: max RSS=9976 KB, minor faults=2117, major faults=1
+--- /usr/bin/time -v sample ---
+/usr/bin/time -v ./vm_access 32 2>&1 | tail -n 12
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 8270
+	Voluntary context switches: 11
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 2
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task04'
