@@ -1,0 +1,22 @@
+make: Entering directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task02'
+./paging_demo
+Address translation (PAGE_SIZE=1024):
+    0 -> page 0 offset     0 : physical 5120
+ 1500 -> page 1 offset   476 : physical 2524
+ 3100 -> page 3 offset    28 : physical 7196
+ 6200 -> page 6 offset    56 : physical 3128
+ 9000 -> page 8 offset   808 : invalid address
+ 2049 -> page 2 offset     1 : page fault
+Internal fragmentation for sample process sizes:
+page size 1024 bytes: total unused bytes=5368 (n=10)
+page size 4096 bytes: total unused bytes=28920 (n=10)
+page size 2097152 bytes: total unused bytes=20910328 (n=10)
+EAT with serial TLB lookup, hit: lookup+memory, miss: lookup+2*memory:
+hit ratio 80%: 130.00 ns
+hit ratio 95%: 115.00 ns
+hit ratio 99%: 111.00 ns
+Without TLB (one-level page table): 200.00 ns
+--- Linux page size ---
+getconf PAGESIZE
+4096
+make: Leaving directory '/mnt/c/Users/Mrudhula/Downloads/OS_Assignment3_Complete_One_Run/OS_Assignment3_WSL_Pack/Task02'

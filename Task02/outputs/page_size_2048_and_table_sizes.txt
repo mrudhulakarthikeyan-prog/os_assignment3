@@ -1,0 +1,15 @@
+Q2 – PAGE_SIZE=2048 RE-CALCULATION (same page table)
+logical,page,offset,result
+0,0,0,physical 10240
+1500,0,1500,physical 11740
+3100,1,1052,physical 5148
+6200,3,56,physical 14392
+9000,4,808,physical 808
+2049,1,1,physical 4097
+
+Page-table entries with 4 KB pages (one entry per virtual page):
+32-bit address space: 1,048,576 entries
+48-bit address space: 68,719,476,736 entries
+Assumption: 4-byte page-table entry; single-level table size = entries × 4 bytes.
+32-bit table size = 4,194,304 bytes
+48-bit table size = 274,877,906,944 bytes
