@@ -1,0 +1,1 @@
+Run `make run`. The script reports your WSL-visible block devices and swap. RAID capacities assume six equal 4 TB decimal disks and exclude filesystem/metadata overhead. For a hospital records server, RAID 10 or RAID 6 are defensible choices depending on write performance and capacity priorities; RAID is not a backup.

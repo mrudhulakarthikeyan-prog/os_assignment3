@@ -1,0 +1,6 @@
+Q6 – DISK FAILURE PROBABILITY MODEL
+Assumption: independent annual per-disk failure probability q=2%; simplified model ignores rebuild window and correlated failures.
+RAID1 two-disk mirror data-loss probability (both fail in same year): 0.04000000%
+RAID5 six-disk array data-loss probability (2 or more fail in same year): 0.56871235%
+RAID5 calculation is a binomial tail for >=2 failed disks; actual risk depends on rebuild time and correlated failures.
+Local filesystem sequential read: 32 MiB in 0.005391 s (5936.25 MiB/s); this is not an SSD-vs-HDD comparison.

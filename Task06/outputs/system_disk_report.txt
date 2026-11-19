@@ -1,0 +1,31 @@
+Q6 – DISK AND SWAP INSPECTION
+$ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+NAME   SIZE TYPE FSTYPE MOUNTPOINTS
+sda  356.9M disk ext4   
+sdb  159.4M disk ext4   
+sdc      2G disk swap   [SWAP]
+sdd      1T disk ext4   /mnt/wslg/distro
+                        /
+$ cat /proc/swaps
+Filename				Type		Size		Used		Priority
+/dev/sdc                                partition	2097152		0		-2
+$ df -hT
+Filesystem     Type     Size  Used Avail Use% Mounted on
+none           overlay  3.8G     0  3.8G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none           tmpfs    3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers        9p       476G  175G  302G  37% /usr/lib/wsl/drivers
+/dev/sdd       ext4    1007G  2.3G  954G   1% /
+none           tmpfs    3.8G   36K  3.8G   1% /mnt/wslg
+none           overlay  3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs         rootfs   3.8G  2.8M  3.8G   1% /init
+none           tmpfs    3.8G  532K  3.8G   1% /run
+none           tmpfs    3.8G     0  3.8G   0% /run/lock
+none           tmpfs    3.8G     0  3.8G   0% /run/shm
+none           overlay  3.8G   80K  3.8G   1% /mnt/wslg/versions.txt
+none           overlay  3.8G   80K  3.8G   1% /mnt/wslg/doc
+C:\            9p       476G  175G  302G  37% /mnt/c
+tmpfs          tmpfs    3.8G     0  3.8G   0% /tmp
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none           tmpfs    1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs          tmpfs    777M   12K  777M   1% /run/user/1000
